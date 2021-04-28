@@ -63,7 +63,7 @@ body{
   @media (max-width: 575px){
     margin: 0 0 20px 0;
   }
-  &--img{
+  &__img{
     position: relative;
     bottom: 100px;
     margin: 0 0 -80px 0;
@@ -71,14 +71,14 @@ body{
       bottom: 75px;
       margin: 0 0 -55px 0;
     }
-    &__photo{
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      @media (max-width: 767px){
-        width: 150px;
-        height: 150px;
-      }
+  }
+  &__photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    @media (max-width: 767px){
+      width: 150px;
+      height: 150px;
     }
   }
   &__name{
@@ -94,113 +94,112 @@ body{
       font-size: 25px;
     }
   }
-  &--position{
-    &__post{
-      font-size: 18px;
-      color: #ffffff;
-      font-weight: 500;
-      font-style: normal;
-      text-align: center;
-      text-transform: uppercase;
-      background-color: $colorMain;
-      display: inline-block;
-      padding: 5px 10px;
-      margin: 0 0 30px 0;
-      border-radius: 10px;
-      @media (max-width: 767px){
-        font-size: 14px;
-      }
-      @media (max-width: 450px){
-        font-size: 10px;
-      }
+  &__post{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $colorMain;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 0 30px 0;
+    border-radius: 10px;
+    @media (max-width: 767px){
+      font-size: 14px;
+    }
+    @media (max-width: 450px){
+      font-size: 10px;
     }
   }
 }
 .main{
   padding: 0 30px;
-  &--item{
-    &--about{
-      margin: 0 0 100px;
-      @media (max-width: 991px){
-        margin: 0 0 50px;
-      }
-      @media (max-width: 767px){
-        margin: 0 0 40px;
-      }
-      &__title{
-        margin: 0 0 15px 0 ;
-      }
-      &__text{
-        padding: 0 25px 0 0;
-        @media (max-width: 767px){
-          padding: 0;
-          font-size: 12px;
-        }
-      }
-    }
-    &--contacts{
-      @media (max-width: 991px) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      @media (max-width: 767px){
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-      }
-      &--element{
-        margin: 0 0 30px 0;
-        position: relative;
-        @media (max-width: 991px) {
-          flex: 0 1 50%;
-        }
-        @media (max-width: 767px){
-          flex: 0 1 100%;
-          margin-left:100px;
-        }
-        @media (max-width: 575px){
-          flex: 0 1 100%;
-          margin-left: 0;
-        }
-        i{
-          position: absolute;
-          font-size: 40px;
-          color: $colorMain;
-          top: 2px;
-          @media (max-width: 450px){
-            font-size: 30px;
-            top: 4px
-          }
-        }
-        &__title{
-          font-size: 18px;
-          margin: 0 0 10px 55px ;
-          @media (max-width: 450px){
-            font-size: 14px;
-            margin: 0 0 10px 40px;
-          }
-        }
-        &__link{
-          font-size: 18px;
-          margin: 0 0 0 55px;
-          color: $colorMain;
-          transition: all ease 0.3s;
-          @media (max-width: 450px){
-            font-size: 14px;
-            margin: 0 0 0 40px;
-          }
-          &:hover{
-            text-decoration: underline;
-            color: darkred;
-          }
-        }
-      }
-    }
+  &__item{
     &--filmography{
       padding: 0 0 30px 0;
       &__title{
         margin: 0 0 15px 0;
       }
+    }
+  }
+
+}
+.about{
+  margin: 0 0 100px;
+  @media (max-width: 991px){
+    margin: 0 0 50px;
+  }
+  @media (max-width: 767px){
+    margin: 0 0 40px;
+  }
+  &__title{
+    margin: 0 0 15px 0 ;
+  }
+  &__text{
+    padding: 0 25px 0 0;
+    @media (max-width: 767px){
+      padding: 0;
+      font-size: 12px;
+    }
+  }
+}
+.contacts{
+  @media (max-width: 991px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 767px){
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  &__element{
+    margin: 0 0 30px 0;
+    position: relative;
+    @media (max-width: 991px) {
+      flex: 0 1 50%;
+    }
+    @media (max-width: 767px){
+      flex: 0 1 100%;
+      margin-left:100px;
+    }
+    @media (max-width: 575px){
+      flex: 0 1 100%;
+      margin-left: 0;
+    }
+  }
+  &__title{
+    font-size: 18px;
+    margin: 0 0 10px 55px ;
+    @media (max-width: 450px){
+      font-size: 14px;
+      margin: 0 0 10px 40px;
+    }
+  }
+  &__link{
+    font-size: 18px;
+    margin: 0 0 0 55px;
+    color: $colorMain;
+    transition: all ease 0.3s;
+    @media (max-width: 450px){
+      font-size: 14px;
+      margin: 0 0 0 40px;
+    }
+    &:hover{
+      text-decoration: underline;
+      color: darkred;
+    }
+  }
+  &__icon{
+    position: absolute;
+    font-size: 40px;
+    color: $colorMain;
+    top: 2px;
+    @media (max-width: 450px){
+      font-size: 30px;
+      top: 4px
     }
   }
 }
