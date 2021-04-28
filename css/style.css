@@ -143,11 +143,6 @@ body {
   }
 }
 
-.description {
-  text-indent: 25px;
-  font-size: 14px;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -368,6 +363,11 @@ body {
   .film__flex {
     flex-direction: column;
   }
+}
+.film__description {
+  line-height: 20px;
+  text-indent: 25px;
+  font-size: 14px;
 }
 .film__img {
   flex: 0 1 30%;

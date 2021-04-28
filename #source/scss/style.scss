@@ -51,10 +51,6 @@ body{
     line-height: 20px;
   }
 }
-.description{
-  text-indent: 25px;
-  font-size: 14px;
-}
 .header{
   display: flex;
   flex-direction: column;
@@ -234,7 +230,9 @@ body{
     }
   }
   &__description{
-    //line-height: 20px;
+    line-height: 20px;
+    text-indent: 25px;
+    font-size: 14px;
   }
   &__img{
     flex: 0 1 30%;
